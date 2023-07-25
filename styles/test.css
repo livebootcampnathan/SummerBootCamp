@@ -1,14 +1,5 @@
 img {
-  width: 300px;
-  margin: 0 auto;
-  /* display: block; */
-}
-
-body {
-  background-color: #00ff00;
-  color: blue;
-}
-
-h1, p {
-  text-align: center;
+  object-fit: cover;
+  width: 400px;
+  height: 300px;
 }

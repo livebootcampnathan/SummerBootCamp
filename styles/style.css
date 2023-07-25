@@ -105,11 +105,6 @@ footer div {
   margin: 20px;
 }
 
-.kidList {
-  margin-left: 20px;
-  text-align: left;
-}
-
 @media screen and (max-width: 800px) {
   footer {
     grid-template-columns: 1fr;
