@@ -1,3 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+:root {
+  --background1: #cdb4dbff;
+  --background2: #ffc8ddff;
+  --background3: #ffafccff;
+  --secondary1: #bde0feff;
+  --secondary2: #a2d2ffff;
+  --contrast1: #1e2d2fe8;
+}
+
 * {
   font-family: sans-serif;
   margin: 0;
@@ -5,8 +16,24 @@
   font-size: 1.1rem;
 }
 
+html,
+body {
+  color: var(--contrast1);
+}
+
 h1 {
   margin: 0;
+}
+
+.caveatFont {
+  font-family: Caveat;
+}
+
+.fancyColor {}
+
+.testDiv {
+  width: 100px;
+  height: 100px;
 }
 
 p {
@@ -19,7 +46,7 @@ header {
   width: 100%;
   display: flex;
   flex-direction: row;
-  background-color: white;
+  background-color: var(--background1);
   font-weight: 300;
   padding: 15px;
   justify-content: center;
@@ -39,7 +66,7 @@ header ul {
 
 header li a {
   text-decoration: none;
-  color: black;
+  color: var(--contrast1);
   font-size: 1.2rem;
 }
 
@@ -55,17 +82,19 @@ header li :hover {
 
 .content {
   padding: 74px 50px;
-  background-color: #f7f7f7;
+  background-color: var(--secondary1);
   display: flex;
   gap: 35px;
   flex-wrap: wrap;
   justify-content: center;
 }
 
+
+
 .card {
   width: 28%;
-  background-color: white;
-  color: #1e2d2fe8;
+  background-color: var(--background3);
+  color: var(--contrast1);
   border-radius: 5px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
@@ -75,6 +104,12 @@ header li :hover {
 
 .card h2 {
   font-size: 1.5em;
+}
+
+.kidList {
+  /* list-style-position: inside; */
+  margin-left: 20px;
+  text-align: left;
 }
 
 button {
@@ -88,8 +123,8 @@ button {
 }
 
 footer {
-  background-color: gray;
-  color: white;
+  background-color: var(--background1);
+  color: var(--contrast1);
 
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -98,7 +133,7 @@ footer {
 }
 
 footer a {
-  color: white;
+  color: var(--contrast1);
 }
 
 footer div {
